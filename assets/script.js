@@ -27,7 +27,7 @@ valider.addEventListener('click', () => {
                 let today = `${joursEnLettres[start_date.getDay()]} ${start_date.getDate()} ${moisEnLettres[start_date.getMonth()]} ${start_date.getFullYear()}`;
                 let today2 = `${joursEnLettres[end_date.getDay()]} ${end_date.getDate()} ${moisEnLettres[end_date.getMonth()]} ${end_date.getFullYear()}`;
 
-                result.innerHTML += `<div class="card">
+                result.innerHTML += `<div class="card w-50 mx-auto my-2">
             <div class="card-body">
               <h5 class="card-title">${element.fields.description}</h5>
               <p class="card-text">Date de début: ${today}</p>
@@ -38,6 +38,6 @@ valider.addEventListener('click', () => {
             });
         });
 
-    console.log(result);
+   
 });
 
